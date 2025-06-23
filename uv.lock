@@ -154,11 +154,21 @@ wheels = [
 ]
 
 [[package]]
+name = "binance"
+version = "0.3.50"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/4d/82/8988ca677008765cd4c3ebe53b6eccc2d8f7178ba467c4b240ffc5f55033/binance-0.3.50.tar.gz", hash = "sha256:767903cb7610e80aeb332b1e6676dc831ab4ad73b83ce334ce1d7766405af988", size = 732134, upload-time = "2025-06-18T17:39:31.638Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/e5/6a/85da61bef63495428c735b491824a32efd957711cfec778d96ee2dd394b6/binance-0.3.50-py3-none-any.whl", hash = "sha256:a1841948d392dc298172029b23eb83381f02960c3a4aacddef3aed981b6e2107", size = 850877, upload-time = "2025-06-18T17:39:29.999Z" },
+]
+
+[[package]]
 name = "bitestnet"
 version = "0.1.0"
 source = { virtual = "." }
 dependencies = [
     { name = "argparse" },
+    { name = "binance" },
     { name = "logging" },
     { name = "python-binance" },
 ]
@@ -166,6 +176,7 @@ dependencies = [
 [package.metadata]
 requires-dist = [
     { name = "argparse", specifier = ">=1.4.0" },
+    { name = "binance", specifier = ">=0.3.50" },
     { name = "logging", specifier = ">=0.4.9.6" },
     { name = "python-binance", specifier = ">=1.0.29" },
 ]

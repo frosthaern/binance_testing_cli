@@ -6,6 +6,7 @@ readme = "README.md"
 requires-python = ">=3.9"
 dependencies = [
     "argparse>=1.4.0",
+    "binance>=0.3.50",
     "logging>=0.4.9.6",
     "python-binance>=1.0.29",
 ]
